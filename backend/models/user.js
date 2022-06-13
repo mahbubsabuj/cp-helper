@@ -7,8 +7,7 @@ const userSchema = mongoose.Schema({
   email: { type: String, required: true },
   city: { type: String, default: "" },
   country: { type: String, default: "" },
-  passwordHash: { type: 
-    String, required: true },
+  passwordHash: { type: String, required: true },
   isAdmin: { type: Boolean, default: "" },
   //... and some other fields
 });

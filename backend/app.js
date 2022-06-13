@@ -19,10 +19,12 @@ app.use(morgan("tiny"));
 const problemsRoutes = require("./routes/problems");
 const tagsRoutes = require("./routes/tags");
 const laddersRoute = require("./routes/ladders");
+const usersRoutes = require("./routes/users");
 
 app.use(`${api}/problems`, problemsRoutes);
 app.use(`${api}/tags`, tagsRoutes);
 app.use(`${api}/ladders`, laddersRoute);
+app.use(`${api}/users`, usersRoutes);
 
 //database
 
