@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 
 const ladderSchema = mongoose.Schema({
   name: { type: String, require: true },
-  problems: [{ type: mongoose.Schema.Types.ObjectId }],
+  problems: [{ type: mongoose.Schema.Types.ObjectId, ref: "Problem" }],
 });
 
 exports.Ladder = mongoose.model("Ladder", ladderSchema);
